@@ -14,3 +14,4 @@ jobs:
           token: ${{ secrets.PAT_TOKEN }}
           repository: Gajukanade/Version2Tests
           event-type: run-automation
+
