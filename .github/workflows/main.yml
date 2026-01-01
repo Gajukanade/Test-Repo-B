@@ -12,5 +12,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          repository: your-username/repo-A-automation
+          repository: Gajukanade/Version2Tests
           event-type: run-automation
