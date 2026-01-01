@@ -1,17 +1,16 @@
-name: Trigger Automation on Dev Push
+name: Trigger Automation
 
 on:
   push:
-    branches:
-      - dev
+    branches: [main]
 
 jobs:
   trigger:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Automation Repo
+      - name: Trigger Repo A Automation
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          repository: Gajukanade/Version2Tests
+          repository: your-username/repo-A-automation
           event-type: run-automation
