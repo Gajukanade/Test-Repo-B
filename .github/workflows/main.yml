@@ -2,7 +2,7 @@ name: Trigger Automation
 
 on:
   push:
-    branches: [dev]
+    branches: [main]
 
 jobs:
   trigger:
